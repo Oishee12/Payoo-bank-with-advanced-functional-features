@@ -17,7 +17,7 @@
                 <div class="mockup-phone-display text-black text-center">
                     <div class="stats shadow bg-white">
                     <div class="stat">
-                      <div class="stat-value">9400</div>
+                      <div id="available-balance" class="stat-value">9400</div>
                       <div class="stat-desc">Available Balance</div>
                     </div>
                   </div>
@@ -35,14 +35,26 @@
                     <div class="divider"></div>
                   </div>
 
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 hidden">
                     <div class="card-body">
                       <fieldset class="fieldset">
                         <label class="label text-black text-base">Amount</label>
-                        <input type="email" class="input" autocomplete="off" placeholder="Enter your amount" />
+                        <input id="input-add-money" type="email" class="input" autocomplete="off" placeholder="Enter your amount" />
                         <label class="label text-black text-base">4 digit Pin</label>
-                        <input type="password" class="input" autocomplete="off" placeholder="Enter your pin" />
+                        <input id="input-pin" type="password" class="input" autocomplete="off" placeholder="Enter your pin" />
                         <button id="add-money" class="btn btn-neutral mt-4">Add Money</button>
+                      </fieldset>
+                    </div>
+                  </div>
+
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="label text-black text-base">Amount</label>
+                        <input id="cashout-amount" type="email" class="input" autocomplete="off" placeholder="Enter your amount" />
+                        <label class="label text-black text-base">4 digit Pin</label>
+                        <input id="cashout-pin" type="password" class="input" autocomplete="off" placeholder="Enter your pin" />
+                        <button id="cash-out" class="btn btn-neutral mt-4">Cash Out</button>
                       </fieldset>
                     </div>
                   </div>
@@ -53,5 +65,6 @@
     <script src="./js folder/utilities.js"></script>
     <script src="tailwind.config.js"></script>
     <script src="js folder/addmoney.js"></script>
+    <script src="./js folder/cashout.js"></script>
 </body>
 </html>
